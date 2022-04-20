@@ -1,0 +1,18 @@
+version: '3'
+services:
+  python:
+    build:
+      context: .
+      dockerfile: docker/python/Dockerfile
+    environment:
+      - DJANGO_SETTINGS_MODULE=TextClassification.settings
+      - PYTHONUNBUFFERED=1
+    ports:
+      - 8000:8000
+    command: gunicorn -w 4 TextClassification.wsgi -b 0.0.0.0:8000
+  nginx:
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    ports:
+      - 80:80
