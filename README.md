@@ -1,5 +1,4 @@
-[comment]: <> (![Logo of the project]&#40;https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png&#41;)
-<img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/vci19cxv42sbhs9tb9no" width="25%" height="25%">
+
 
 # Dockerized Text Binary Classification API
 
